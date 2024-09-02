@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia de Tags HTML</title>
+    <!-- Estilo interno CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        .example-div {
+            background-color: #e0e0e0;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <h1>Guia de Tags HTML</h1>
+        <!-- Navegação -->
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#tags-basicas">Tags Básicas</a></li>
+                <li><a href="#formulario">Formulário</a></li>
+                <li><a href="#multimidia">Multimídia</a></li>
+                <li><a href="#tabela">Tabela</a></li>
+                <li><a href="#exemplos-div">Exemplos de Div</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Container principal -->
+    <div class="container">
+        <!-- Conteúdo principal -->
+        <main>
+            <!-- Seção de introdução -->
+            <section id="introducao">
+                <h2>Introdução</h2>
+                <p>Este site é um guia para as principais tags HTML e como estilizar usando CSS.</p>
+            </section>
+
+            <!-- Seção de tags básicas -->
+            <section id="tags-basicas">
+                <h2>Tags Básicas</h2>
+                <h3>Parágrafos e Cabeçalhos</h3>
+                <p>Esta é uma tag de parágrafo.</p>
+                <h1>Este é um cabeçalho H1</h1>
+                <h2>Este é um cabeçalho H2</h2>
+                <h3>Este é um cabeçalho H3</h3>
+                <h4>Este é um cabeçalho H4</h4>
+                <h5>Este é um cabeçalho H5</h5>
+                <h6>Este é um cabeçalho H6</h6>
+
+                <h3>Listas</h3>
+                <ul>
+                    <li>Item de lista não ordenada 1</li>
+                    <li>Item de lista não ordenada 2</li>
+                </ul>
+                <ol>
+                    <li>Item de lista ordenada 1</li>
+                    <li>Item de lista ordenada 2</li>
+                </ol>
+
+                <h3>Links e Imagens</h3>
+                <p>Este é um <a href="https://www.example.com">link</a>.</p>
+                <p>Esta é uma imagem com link:</p>
+                <a href="https://www.example.com">
+                    <img src="https://via.placeholder.com/150" alt="Imagem de exemplo">
+                </a>
+            </section>
+
+            <!-- Seção de formulário -->
+            <section id="formulario">
+                <h2>Formulário</h2>
+                <form action="#" method="post">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+            </section>
+
+            <!-- Seção de multimídia -->
+            <section id="multimidia">
+                <h2>Multimídia</h2>
+                <h3>Vídeo</h3>
+                <video controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+
+                <h3>Áudio</h3>
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mp3">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+            </section>
+
+            <!-- Seção de tabela -->
+            <section id="tabela">
+                <h2>Tabela</h2>
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                    </tr>
+                    <tr>
+                        <td>João</td>
+                        <td>joao@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td>maria@example.com</td>
+                    </tr>
+                </table>
+            </section>
+
+            <!-- Seção de exemplos de div -->
+            <section id="exemplos-div">
+                <h2>Exemplos de Div</h2>
+                <div class="example-div">
+                    <p>Esta é uma div de exemplo com fundo cinza claro.</p>
+                </div>
+                <div class="example-div">
+                    <p>Outra div de exemplo com fundo cinza claro.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Rodapé do site -->
+    <footer>
+        <p>© 2024 Guia de Tags HTML</p>
+    </footer>
+</body>
+</html>
+
+
